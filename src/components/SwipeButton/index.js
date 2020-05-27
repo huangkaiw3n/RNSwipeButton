@@ -112,6 +112,7 @@ class SwipeButton extends React.Component {
       titleColor,
       titleFontSize,
       titleStyles,
+      titleProps,
       width,
     } = this.props;
     const { screenReaderEnabled } = this.state;
@@ -141,7 +142,8 @@ class SwipeButton extends React.Component {
               fontSize: titleFontSize,
               ...titleStyles,
             },
-          ]}>
+          ]}
+          {...titleProps}>
           {title}
         </Text>
         {this.state.layoutWidth > 0 && (
@@ -195,6 +197,7 @@ SwipeButton.defaultProps = {
   titleColor: TITLE_COLOR,
   titleFontSize: 20,
   titleStyles: {},
+  titleProps: {},
 };
 
 SwipeButton.propTypes = {
@@ -233,6 +236,7 @@ SwipeButton.propTypes = {
   titleColor: PropTypes.string,
   titleFontSize: PropTypes.number,
   titleStyles: PropTypes.object,
+  titleProps: PropTypes.object,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
