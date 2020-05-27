@@ -1,11 +1,11 @@
-## React Native Swipe Button Component <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" /> 
+## React Native Swipe Button Component <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" />
 <a href="https://nodei.co/npm/rn-swipe-button/"><img src="https://nodei.co/npm/rn-swipe-button.png?downloads=true&downloadRank=true&stars=true"></a>
 
 <hr>
 <div style="color:darkcyan; font-size: 15px;">
     <p>npm install rn-swipe-button --save</p>
     <p>import SwipeButton from 'rn-swipe-button';</p>
-    const renderSwipeButton = () => (&lt;SwipeButton /&gt;) 
+    const renderSwipeButton = () => (&lt;SwipeButton /&gt;)
 </div>
 <hr>
 <div>
@@ -53,6 +53,7 @@
     <b>titleColor</b>: PropTypes.string,
     <b>titleFontSize</b>: PropTypes.number,
     <b>titleStyles</b>: PropTypes.object,
+    <b>titleProps</b>: PropTypes.object,
     <b>width</b>: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.number,
